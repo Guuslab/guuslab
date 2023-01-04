@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+                   .corner5 {
+                border-radius: 5px; /*round corner 5px*/
+            }
+            .corner10 {
+                border-radius: 10px; /*round corner 10px*/
+            }
+            .corner15 {
+                border-radius: 15px; /*round corner 15px*/
+            }
+            .corner20 {
+                border-radius: 20px; /*round corner 20px*/
+            }
+            .middle-text {
+                text-align: center;  /*align text to middle*/
+            }
+            .textmiddle {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            }
+            .middle-image {
+                display: block;
+                margin: auto; /*align imageto middle*/
+            }
+            .animated-div {
+    animation: move-left 1s ease-in-out;
+  }
+
+  @keyframes move-left {
+    100% {
+      transform: translateX(0%);
+    }
+    0% {
+      transform: translateX(-100%);
+    }
+  }
+
+
+</style>
+
+<body style="margin: 0px; background: #252525;">
+       <!--nav bar-->
+    <div class="textmiddle" style="position: fixed; left: 0; right: 0; top: 0; bottom: auto;  background-color: #c4cbe0bb; backdrop-filter: blur(5px);">
+
+       <img src="rest/foto/logoblack.png" style="float: left;" alt="logo" width="60px">
+
+       <!--link's-->
+       <font face="arial" style="font-weight: 700; font-size: 20px;">
+       <a href="" style="text-decoration:none; color: rgb(15, 15, 15); padding: 10px 0px 10px 0px; margin: 0px 25px 0px 25px;">text</a>
+       <a href="" style="text-decoration:none; color: rgb(15, 15, 15); padding: 10px 0px 10px 0px; margin: 0px 25px 0px 25px;">text</a>
+       <a href="" style="text-decoration:none; color: rgb(15, 15, 15); padding: 10px 0px 10px 0px; margin: 0px 25px 0px 25px;">text</a>
+       </font>
+   </div>
+
+
+
+
+</body>
