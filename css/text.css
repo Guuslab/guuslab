@@ -1,0 +1,26 @@
+a {
+       font-family: Varela Round;
+}
+
+.link{
+       text-decoration:none; 
+       color: #29313d; 
+       padding: 10px 0px 10px 0px; 
+       margin: 0px 25px 0px 25px; 
+       font-weight: 700; 
+       font-size: 30px;
+}
+
+.textr {
+       text-align: right;
+}
+   
+.textl {
+       text-align: left;
+}
+   
+.textc {
+       text-align: center;
+}
+   
+   

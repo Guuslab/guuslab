@@ -1,0 +1,14 @@
+body {
+margin: 0px; 
+background-color: #f2f8ff;
+}
+
+.nav {
+       position: fixed; 
+       left: 0; 
+       right: 0; 
+       top: 0; 
+       bottom: auto; 
+       background-color: #b8d2f8; 
+       z-index: 10;
+}
