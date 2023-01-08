@@ -15,9 +15,7 @@ style
                 text-align: center;  /*align text to middle*/
             }
             .textmiddle {
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            text-align: center;
             }
             .middle-image {
                 display: block;
