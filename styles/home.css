@@ -1,0 +1,38 @@
+style
+            .corner5 {
+                border-radius: 5px; /*round corner 5px*/
+            }
+            .corner10 {
+                border-radius: 10px; /*round corner 10px*/
+            }
+            .corner15 {
+                border-radius: 15px; /*round corner 15px*/
+            }
+            .corner20 {
+                border-radius: 20px; /*round corner 20px*/
+            }
+            .middle-text {
+                text-align: center;  /*align text to middle*/
+            }
+            .textmiddle {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            }
+            .middle-image {
+                display: block;
+                margin: auto; /*align imageto middle*/
+            }
+            .animated-div {
+              animation: move-left 1s ease-in-out;
+               }
+
+              @keyframes move-left {
+              100% {
+              transform: translateX(0%);
+               }
+              0% {
+               transform: translateX(-100%);
+              }
+              }
+
