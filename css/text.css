@@ -5,10 +5,11 @@ a {
 .link{
        text-decoration:none; 
        color: #29313d; 
-       padding: 10px 0px 10px 0px; 
+       padding: 20px 0px 20px 0px; 
        margin: 0px 25px 0px 25px; 
        font-weight: 700; 
        font-size: 30px;
+       text-align: center;
 }
 
 .textr {
@@ -22,5 +23,3 @@ a {
 .textc {
        text-align: center;
 }
-   
-   
