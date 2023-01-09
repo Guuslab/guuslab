@@ -1,0 +1,9 @@
+.navdiv1 {
+       position: fixed; 
+       left: 215px; 
+       right: 0; 
+       top: 0; 
+       bottom: auto; 
+       padding-top: 30px; 
+       padding-bottom: 30px;
+}
