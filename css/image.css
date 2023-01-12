@@ -16,3 +16,8 @@ style
     border-radius: 20px; /*round corner 20px*/
 }
 
+.logo {
+    margin-left: 15px;
+    height: 60px;
+}
+

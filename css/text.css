@@ -5,10 +5,9 @@ a {
 .link{
        text-decoration:none; 
        color: #ffffff; 
-       padding: 20px 0px 20px 0px; 
        margin: 0px 25px 0px 25px; 
        font-weight: 700; 
-       font-size: 30px;
+       font-size: 150%;
        text-align: center;
 }
 
@@ -22,4 +21,8 @@ a {
    
 .textc {
        text-align: center;
+}
+
+.hellotext {
+       margin: 20vh;
 }

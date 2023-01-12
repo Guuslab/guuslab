@@ -1,12 +1,10 @@
 .navdiv1 {
        position: fixed; 
-       left: 215px; 
+       left: 20vw; 
        right: 0; 
        top: 0; 
        bottom: auto; 
-       padding-top: 40px; 
-       padding-bottom: 40px;
-       padding: 25px 0px 25px 0px; 
+       padding: 20px 0 0 0; 
 }
 
 .middel {
