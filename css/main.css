@@ -1,0 +1,116 @@
+body {
+       margin: 0px; 
+       background-color: #ecedef;
+}
+
+a {
+       font-family: Varela Round;
+}
+
+.font {
+       font-family: Varela Round;
+       text-decoration:none; 
+       color: #333;  
+}
+       
+.nav {
+       position: fixed; 
+       left: 0; 
+       right: 0; 
+       top: 0; 
+       bottom: auto; 
+       background-color: #242424; 
+       z-index: 10;
+}
+       
+.navdiv1 {
+       position: fixed; 
+       left: 20vw; 
+       right: 0; 
+       top: 0; 
+       bottom: auto; 
+       padding: 20px 0 0 0; 
+}
+       
+.middel {
+       display: flex; 
+       align-items: center; 
+       justify-content: center;
+}
+
+.corner5 {
+    border-radius: 5px; /*round corner 5px*/
+ }
+
+.corner10 {
+    border-radius: 10px; /*round corner 10px*/
+}
+
+.corner15 {
+    border-radius: 15px; /*round corner 15px*/
+}
+
+.corner20 {
+    border-radius: 20px; /*round corner 20px*/
+}
+
+.logo {
+    margin-left: 15px;
+    width: 150px;
+}
+
+.link{
+       text-decoration:none; 
+       color: #ffffff; 
+       margin: 0px 25px 0px 25px; 
+       font-weight: 700; 
+       font-size: 150%;
+       text-align: center;
+}
+
+.linkon{
+       text-decoration:none; 
+       color: #ffffff; 
+       outline: 5px;
+       outline-color: #ff0000;
+       margin: 0px 25px 0px 25px; 
+       font-weight: 700; 
+       font-size: 150%;
+       text-align: center;
+}
+
+.textr {
+       text-align: right;
+}
+   
+.textl {
+       text-align: left;
+}
+   
+.textc {
+       text-align: center;
+}
+
+.hellotext {
+       margin-top: 100px;
+       text-align: center;
+}
+
+.font {
+       font-family: Varela Round;
+}
+
+.neumorphism {
+       border-radius: 20px;
+       background: #ecedef;
+       box-shadow:  16px 16px 30px #a5a6a7,
+                    -16px -16px 30px #ffffff;
+}
+
+.box {
+       margin-top: 150px;
+       margin-left: 10%;
+       margin-right: 10%;
+       padding-top: 10px;
+       padding-bottom: 10px;
+}
