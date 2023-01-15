@@ -69,10 +69,7 @@ a {
 }
 
 .linkon{
-       text-decoration:none; 
        color: #ffffff; 
-       outline: 5px;
-       outline-color: #ff0000;
        margin: 0px 25px 0px 25px; 
        font-weight: 700; 
        font-size: 150%;
