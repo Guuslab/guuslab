@@ -111,3 +111,20 @@ a {
        padding-top: 10px;
        padding-bottom: 10px;
 }
+
+.boxpro {
+       margin-top: 150px;
+       margin-left: 30%;
+       margin-right: 30%;
+       padding-top: 10px;
+       padding-bottom: 10px;
+       cursor: pointer;
+       -
+}
+
+.buttonpro {
+       padding: 10%;
+       border: 20%; 
+       border-radius: 20%;
+       border-color: #a5a6a7;
+}
