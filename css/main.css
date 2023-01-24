@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Raleway:wght@500&display=swap');
+/* 
+big
+font-family: 'Audiowide', cursive;
+smal
+font-family: 'Raleway', sans-serif;
+*/
+
+
+
 body {
        margin: 0px; 
        background-color: #ecedef;
@@ -7,11 +17,16 @@ a {
        font-family: Varela Round;
 }
 
-.font {
-       font-family: Varela Round;
+.fontb {
+       font-family: 'Audiowide', cursive;
        text-decoration:none; 
        color: #333;  
 }
+
+.fonts {
+       font-family: 'Raleway', sans-serif;
+       text-decoration:none; 
+       color: #333; }
        
 .nav {
        position: fixed; 
@@ -127,4 +142,23 @@ a {
        border: 20%; 
        border-radius: 20%;
        border-color: #a5a6a7;
+}
+
+.project {
+       margin-top: 150px;
+       margin-left: 30%;
+       margin-right: 30%;
+       padding-top: 10px;
+       padding-bottom: 10px;
+       cursor: pointer;
+       border-radius: 20px;
+       background: #ecedef;
+       box-shadow:  16px 16px 30px #a5a6a7,
+                    -16px -16px 30px #ffffff;
+       text-align: center; 
+}
+
+.project :hover {
+       transition: all;
+       transition-duration: 1s;
 }
