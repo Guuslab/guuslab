@@ -56,7 +56,8 @@ a {
 
 .logo {
     margin-left: 15px;
-    width: 150px;
+    margin-top: 5px;
+    height: 65px;
 }
 
 .link{
@@ -119,7 +120,6 @@ a {
        padding-top: 10px;
        padding-bottom: 10px;
        cursor: pointer;
-       -
 }
 
 .buttonpro {
