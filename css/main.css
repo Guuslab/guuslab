@@ -34,8 +34,10 @@ a {
        right: 0; 
        top: 0; 
        bottom: auto; 
-       background-color: #242424; 
+       background-color: #242424e5; 
        z-index: 10;
+       backdrop-filter: blur(5px);
+       -webkit-backdrop-filter: blur(5px);
 }
        
 .navdiv1 {
@@ -102,15 +104,6 @@ a {
    
 .textc {
        text-align: center;
-}
-
-.hellotext {
-       margin-top: 100px;
-       text-align: center;
-}
-
-.font {
-       font-family: Varela Round;
 }
 
 .neumorphism {
