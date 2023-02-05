@@ -123,11 +123,11 @@ a {
 .logo {
     margin-left: 15px;
     margin-top: 5px;
-    height: 65px;
+    height: 40px;
 }
 @media (max-width: 1300px) {
        .logo{
-             height: 100px; 
+             height: 80px; 
        }
 } 
 
