@@ -7,12 +7,13 @@ font-family: 'Raleway', sans-serif;
 */
 
 
-
+/*body--------------------------------------------------------------------------------*/
 body {
        margin: 0px; 
        background-color: #ecedef;
 }
 
+/*text and font-----------------------------------------------------------------------*/
 a {
        font-family: Varela Round;
 }
@@ -27,7 +28,55 @@ a {
        font-family: 'Raleway', sans-serif;
        text-decoration:none; 
        color: #333; }
-       
+
+.link{
+       text-decoration:none; 
+       color: #ffffff; 
+       margin: 0px 25px 0px 25px; 
+       font-weight: 700; 
+       text-align: center;
+}
+
+.linkon{
+       color: #ffffff; 
+       margin: 0px 25px 0px 25px; 
+       font-weight: 700; 
+       text-align: center;
+       text-decoration: underline;
+       text-underline-offset: 10px;
+}
+
+.textr {
+       text-align: right;
+}
+   
+.textl {
+       text-align: left;
+}
+   
+.textc {
+       text-align: center;
+} 
+
+.title {
+       font-size: 35px;
+}
+@media (max-width: 1080px) {
+       .title{
+           font-size: 50px;   
+       }
+} 
+
+.maintext{
+       font-size: 20px;
+}
+@media (max-width: 1080px) {
+       .maintext{
+           font-size: 35px;   
+       }
+} 
+
+/*navigation--------------------------------------------------------------------------*/
 .nav {
        position: fixed; 
        left: 0; 
@@ -38,17 +87,41 @@ a {
        z-index: 10;
        backdrop-filter: blur(5px);
        -webkit-backdrop-filter: blur(5px);
+       font-size: 175%;
 }
-       
+@media (max-width: 1080px) {
+       .nav{
+           font-size: 275%;   
+       }
+}  
+
 .navdiv1 {
        position: fixed; 
        left: 20vw; 
        right: 0; 
        top: 0; 
        bottom: auto; 
-       padding: 20px 0 0 0; 
+       margin-top: 17.5px; 
 }
-       
+@media (max-width: 1080px) {
+       .navdiv1{
+             margin-top: 27.5px;
+       }
+} 
+
+/*photos------------------------------------------------------------------------------*/
+.logo {
+    margin-left: 15px;
+    margin-top: 5px;
+    height: 65px;
+}
+@media (max-width: 1080px) {
+       .logo{
+             height: 100px; 
+       }
+} 
+
+/*posision and corner-----------------------------------------------------------------*/
 .middel {
        display: flex; 
        align-items: center; 
@@ -71,41 +144,7 @@ a {
     border-radius: 20px; /*round corner 20px*/
 }
 
-.logo {
-    margin-left: 15px;
-    margin-top: 5px;
-    height: 65px;
-}
-
-.link{
-       text-decoration:none; 
-       color: #ffffff; 
-       margin: 0px 25px 0px 25px; 
-       font-weight: 700; 
-       font-size: 150%;
-       text-align: center;
-}
-
-.linkon{
-       color: #ffffff; 
-       margin: 0px 25px 0px 25px; 
-       font-weight: 700; 
-       font-size: 150%;
-       text-align: center;
-}
-
-.textr {
-       text-align: right;
-}
-   
-.textl {
-       text-align: left;
-}
-   
-.textc {
-       text-align: center;
-}
-
+/*efects------------------------------------------------------------------------------*/
 .neumorphism {
        border-radius: 20px;
        background: #ecedef;
@@ -113,30 +152,7 @@ a {
                     -16px -16px 30px #ffffff;
 }
 
-.box {
-       margin-top: 150px;
-       margin-left: 10%;
-       margin-right: 10%;
-       padding-top: 10px;
-       padding-bottom: 10px;
-}
-
-.boxpro {
-       margin-top: 150px;
-       margin-left: 30%;
-       margin-right: 30%;
-       padding-top: 10px;
-       padding-bottom: 10px;
-       cursor: pointer;
-}
-
-.buttonpro {
-       padding: 10%;
-       border: 20%; 
-       border-radius: 20%;
-       border-color: #a5a6a7;
-}
-
+/*div or buton------------------------------------------------------------------------*/
 .project {
        margin-top: 150px;
        margin-left: 30%;
@@ -154,4 +170,21 @@ a {
 .project :hover {
        transition: all;
        transition-duration: 1s;
+}
+
+.box {
+       margin-top: 150px;
+       margin-left: 10%;
+       margin-right: 10%;
+       padding-top: 10px;
+       padding-bottom: 10px;
+}
+
+.boxpro {
+       margin-top: 150px;
+       margin-left: 30%;
+       margin-right: 30%;
+       padding-top: 10px;
+       padding-bottom: 10px;
+       cursor: pointer;
 }
