@@ -61,7 +61,7 @@ a {
 .title {
        font-size: 35px;
 }
-@media (max-width: 1300px) {
+@media (max-width: 1080px) {
        .title{
            font-size: 50px;   
        }
@@ -70,7 +70,7 @@ a {
 .maintext{
        font-size: 20px;
 }
-@media (max-width: 1300px) {
+@media (max-width: 1080px) {
        .maintext{
            font-size: 35px;   
        }
@@ -89,7 +89,7 @@ a {
        -webkit-backdrop-filter: blur(5px);
        font-size: 175%;
 }
-@media (max-width: 1300px) {
+@media (max-width: 1080px) {
        .nav{
            font-size: 275%;   
        }
@@ -108,7 +108,7 @@ a {
        bottom: auto; 
        margin-top: 17.5px; 
 }
-@media (max-width: 1300px) {
+@media (max-width: 1080px) {
        .navdiv1{
              margin-top: 27.5px;
        }
@@ -125,7 +125,7 @@ a {
     margin-top: 5px;
     height: 40px;
 }
-@media (max-width: 1300px) {
+@media (max-width: 1080px) {
        .logo{
              height: 80px; 
        }
