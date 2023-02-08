@@ -69,6 +69,8 @@ a {
  
 .maintext{
        font-size: 20px;
+       padding-left: 10px; 
+       padding-right: 10px;
 }
 @media (max-width: 1300px) {
        .maintext{
