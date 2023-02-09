@@ -165,8 +165,12 @@ a {
 }
 
 /*div or buton------------------------------------------------------------------------*/
+.top {
+       margin-top: 140px;
+}
+
 .project {
-       margin-top: 150px;
+       margin-top: 40px;
        margin-left: 30%;
        margin-right: 30%;
        padding-top: 10px;
