@@ -204,3 +204,79 @@ a {
        padding-bottom: 10px;
        cursor: pointer;
 }
+
+/*card's------------------------------------------------------------------------------*/
+.card-main {
+       margin-top: 100px;
+       margin-left: 10px;
+}
+
+.card-top {
+       background-color: #333;
+       border-top-left-radius: 25px;
+       border-top-right-radius: 25px;
+       max-width: 320px;
+       min-width: 250px;
+       display: flex;
+}
+
+.profile {
+       width: 50px;
+       border-radius: 50%;
+       padding: 20px;
+       margin-right: 20px;
+}
+
+.card-collor {
+       color: #d4d4d4;
+       font-family: arial;
+       font-weight: bold;
+}
+
+.card-collorb {
+       color: #333;
+       font-family: arial;
+       font-weight: bold;
+}
+
+.card-collorl {
+       color: #131313;
+       font-family: arial;
+       font-weight: bold;
+}
+
+.card-list {
+       list-style-type: none;
+       list-style: none;
+       padding: 0;
+       margin: 0;
+       margin-top: 20px;
+}
+
+.name {
+
+}
+
+.place {
+
+}
+
+.age {
+
+}
+
+.card-botom {
+       background-color: #b3b3b3;
+       border-bottom-left-radius: 25px;
+       border-bottom-right-radius: 25px;
+       max-width: 320px;
+       min-width: 250px;
+}
+
+.card-info {
+
+}
+
+.card-button {
+
+}
