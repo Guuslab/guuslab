@@ -176,7 +176,12 @@ a {
 
 /*div or buton------------------------------------------------------------------------*/
 .top {
-       margin-top: 200px;
+       margin-top: 140px;
+}
+@media screen and (display-mode: standalone) {
+       .top {
+              margin-top: 230px;
+       }
 }
 
 .project {
@@ -199,11 +204,16 @@ a {
 }
 
 .box {
-       margin-top: 200px;
+       margin-top: 150px;
        margin-left: 10%;
        margin-right: 10%;
        padding-top: 10px;
        padding-bottom: 10px;
+}
+@media screen and (display-mode: standalone) {
+       .box {
+              margin-top: 230px;
+       }
 }
 
 .boxpro {
@@ -217,8 +227,13 @@ a {
 
 /*card's------------------------------------------------------------------------------*/
 .card-main {
-       margin-top: 200px;
+       margin-top: 100px;
        margin-left: 10px;
+}
+@media screen and (display-mode: standalone) {
+       .card-main {
+              margin-top: 230px;
+       }
 }
 
 .card-top {
