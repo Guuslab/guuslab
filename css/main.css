@@ -101,6 +101,11 @@ a {
            font-size: 3vw;   
        }
 }
+@media screen and (display-mode: standalone) {
+       .nav {
+              height: 90px;
+       }
+}
 
 .navdiv1 {
        position: fixed; 
