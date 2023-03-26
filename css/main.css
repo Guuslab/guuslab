@@ -103,7 +103,7 @@ a {
 }
 @media screen and (display-mode: standalone) {
        .nav {
-              padding-top: 100px;
+              padding-top: 130px;
        }
 }
 
@@ -123,6 +123,11 @@ a {
 @media (max-width: 950px) {
        .navdiv1{
            margin-top: 20px;   
+       }
+}
+@media screen and (display-mode: standalone) {
+       .navdiv1 {
+              padding-top: 130px;
        }
 }
 
