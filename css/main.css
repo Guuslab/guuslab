@@ -103,7 +103,7 @@ a {
 }
 @media screen and (display-mode: standalone) {
        .nav {
-              height: 90px;
+              padding-top: 100px;
        }
 }
 
