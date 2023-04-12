@@ -4,10 +4,9 @@
        --opjects: #1d1d1d;
 }
 
-.body {
+body {
        background-color: var(--background);
-       display: grid;
-       grid-area: 1;
+
 }
 
 .text {
