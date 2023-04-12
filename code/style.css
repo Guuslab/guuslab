@@ -12,6 +12,6 @@
 
 .text {
        font-family: arial;
-       color: aqua;
+       color: var(--text);
 
 }
