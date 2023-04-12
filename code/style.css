@@ -14,3 +14,9 @@ body {
        color: var(--text);
 
 }
+
+.thing {
+       padding: 40px;
+       background-color: var(--opjects);
+       border-radius: 5px;
+}
