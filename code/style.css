@@ -1,0 +1,17 @@
+:root {
+       --background: #333;
+       --text: #ccc;
+       --opjects: #1d1d1d;
+}
+
+.body {
+       background-color: var(--background);
+       display: grid;
+       grid-area: 1;
+}
+
+.text {
+       font-family: arial;
+       color: aqua;
+
+}
