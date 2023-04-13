@@ -6,7 +6,11 @@
 
 body {
        background-color: var(--background);
+}
 
+.card {
+       display: flex;
+       flex-wrap: wrap;
 }
 
 .text {
@@ -15,8 +19,17 @@ body {
 
 }
 
+.title {
+       width: 100%;
+}
+
+pre {
+       color: var(--text);
+}
+
 .thing {
-       padding: 40px;
+       padding: 1px 10px 10px;
+       margin: 10px;
        background-color: var(--opjects);
        border-radius: 5px;
 }
