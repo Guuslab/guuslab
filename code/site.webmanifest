@@ -1,6 +1,6 @@
 {
        "display": "standalone",
-       "short_name": "guuslab",
+       "short_name": "code",
        "icons":[
               {
                      "src":"logo/1024.png",
