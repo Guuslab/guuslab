@@ -101,7 +101,7 @@ a {
            font-size: 3vw;   
        }
 }
-@media screen and (display-mode: standalone) and (max-width: 1150px) {
+@media screen and (display-mode: standalone) and (max-width: 1200px) {
        .nav {
               padding-top: 130px;
        }
@@ -125,7 +125,7 @@ a {
            margin-top: 20px;   
        }
 }
-@media screen and (display-mode: standalone) and (max-width: 1150px) {
+@media screen and (display-mode: standalone) and (max-width: 1200px) {
        .navdiv1 {
               padding-top: 130px;
        }
@@ -178,7 +178,7 @@ a {
 .top {
        margin-top: 140px;
 }
-@media screen and (display-mode: standalone) and (max-width: 1150px) {
+@media screen and (display-mode: standalone) and (max-width: 1200px) {
        .top {
               margin-top: 230px;
        }
@@ -210,7 +210,7 @@ a {
        padding-top: 10px;
        padding-bottom: 10px;
 }
-@media screen and (display-mode: standalone) and (max-width: 1150px) {
+@media screen and (display-mode: standalone) and (max-width: 1200px) {
        .box {
               margin-top: 230px;
        }
@@ -230,7 +230,7 @@ a {
        margin-top: 100px;
        margin-left: 10px;
 }
-@media screen and (display-mode: standalone) and (max-width: 1150px) {
+@media screen and (display-mode: standalone) and (max-width: 1200px) {
        .card-main {
               margin-top: 230px;
        }
