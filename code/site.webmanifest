@@ -8,7 +8,7 @@
                      "size": "1024x1024"
               }
        ],
-       "start_url": "/index.html",
+       "start_url": "code/index.html",
        "background_color": "#333",
        "scope": "/"
 }
