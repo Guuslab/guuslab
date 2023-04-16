@@ -1,4 +1,11 @@
 {
        "display": "standalone",
-       "short_name": "guuslab"
+       "short_name": "guuslab",
+       "icons":[
+              {
+                     "src":"logo/1024.png",
+                     "type": "image/png",
+                     "size": "1024x1024"
+              }
+       ]
 }
