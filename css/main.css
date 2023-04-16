@@ -101,11 +101,6 @@ a {
            font-size: 3vw;   
        }
 }
-@media screen and (display-mode: standalone) and (max-width: 1600px) {
-       /*.nav {
-              padding-top: 130px;
-       }
-}*/
 
 .navdiv1 {
        position: fixed; 
@@ -125,11 +120,6 @@ a {
            margin-top: 20px;   
        }
 }
-@media screen and (display-mode: standalone) and (max-width: 1600px) {
-       /*.navdiv1 {
-              padding-top: 130px;
-       }
-}*/
 
 /*photos------------------------------------------------------------------------------*/
 .logo {
@@ -178,11 +168,6 @@ a {
 .top {
        margin-top: 140px;
 }
-@media screen and (display-mode: standalone) and (max-width: 1600px) {
-       /*.top {
-              margin-top: 230px;
-       }
-}*/
 
 .project {
        margin-top: 40px;
@@ -210,11 +195,6 @@ a {
        padding-top: 10px;
        padding-bottom: 10px;
 }
-@media screen and (display-mode: standalone) and (max-width: 1600px) {
-       /*.box {
-              margin-top: 230px;
-       }
-}*/
 
 .boxpro {
        margin-top: 150px;
@@ -230,11 +210,6 @@ a {
        margin-top: 100px;
        margin-left: 10px;
 }
-@media screen and (display-mode: standalone) and (max-width: 1600px) {
-      /*.card-main {
-              margin-top: 230px;
-       } 
-}*/
 
 .card-top {
        background-color: #333;
