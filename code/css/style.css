@@ -1,35 +1,35 @@
 :root {
-       --background: #333;
-       --text: #ccc;
-       --opjects: #1d1d1d;
+    --background: #333;
+    --text: #ccc;
+    --opjects: #1d1d1d;
 }
 
 body {
-       background-color: var(--background);
+    background-color: var(--background);
 }
 
 .card {
-       display: flex;
-       flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .text {
-       font-family: arial;
-       color: var(--text);
+    font-family: arial;
+    color: var(--text);
 
 }
 
 .title {
-       width: 100%;
+    width: 100%;
 }
 
 pre {
-       color: var(--text);
+    color: var(--text);
 }
 
 .thing {
-       padding: 1px 10px 10px;
-       margin: 10px;
-       background-color: var(--opjects);
-       border-radius: 5px;
+    padding: 1px 10px 10px;
+    margin: 10px;
+    background-color: var(--opjects);
+    border-radius: 5px;
 }

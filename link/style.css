@@ -14,15 +14,22 @@
     padding: 0px;
 }
 
+address, article, aside, div, footer, header, hgroup, main, nav, section {
+    display: inline;
+  }  
+
 body {
     background-color: var(--background);
     padding-top: 80px;
 }
 
 div {
-    background-color: var(--30);
+    background-color: var(--background);
     border-radius: 20px;
-    padding: 30px;
+    margin-top: 140px;
+    padding: 40px;
+    box-shadow: inset 20px 20px 60px #b9b7ae,
+                inset -20px -20px 60px #fbf7ec;
 }
 
 .nav {
@@ -57,5 +64,6 @@ div {
 }
 
 .nav-item a:hover {
-    background-color: #ddd;
+    background-color: var(--30tr);
+    border-radius: 5px;
 }
