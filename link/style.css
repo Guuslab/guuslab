@@ -9,24 +9,21 @@
     --text: #1f3013;
 }
 
-* {
-    margin: 0px;
-    padding: 0px;
-}
-
 address, article, aside, div, footer, header, hgroup, main, nav, section {
     display: inline;
-  }  
+}  
 
 body {
     background-color: var(--background);
     padding-top: 80px;
+    margin: 0px;
+    padding: 0px;
 }
 
 div {
     background-color: var(--background);
+    margin-top: 60px;
     border-radius: 20px;
-    margin-top: 140px;
     padding: 40px;
     box-shadow: inset 20px 20px 60px #b9b7ae,
                 inset -20px -20px 60px #fbf7ec;
