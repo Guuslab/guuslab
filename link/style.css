@@ -15,14 +15,13 @@ address, article, aside, div, footer, header, hgroup, main, nav, section {
 
 body {
     background-color: var(--background);
-    padding-top: 80px;
+    padding-top: 200px;
     margin: 0px;
     padding: 0px;
 }
 
 div {
     background-color: var(--background);
-    margin-top: 60px;
     border-radius: 20px;
     padding: 40px;
     box-shadow: inset 20px 20px 60px #b9b7ae,
@@ -56,11 +55,31 @@ div {
 
 .nav-item a {
     text-decoration: none;
+    font-family: arial;
     color: var(--text);
+    background-color: var(--backgroundtr);
+    transition: background-color 0.5s ease-in-out;
+    border-radius: 5px;
     padding: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
-.nav-item a:hover {
+  .nav-item a:hover {
     background-color: var(--30tr);
-    border-radius: 5px;
-}
+  }
+  
+  .nav-item a:not(:hover) {
+    animation-name: revert-animation;
+    animation-duration: .5s;
+    animation-timing-function: ease-in-out;
+  }
+  
+  @keyframes revert-animation {
+    from {
+      background-color: var(--30tr);
+    }
+    to {
+      background-color: var(--backgroundtr);
+    }
+  }
