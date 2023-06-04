@@ -17,7 +17,7 @@ const cube = new THREE.Mesh(geometry, material);
 scene.add(cube);
 
 const light = new THREE.PointLight(0xffffff, 1);
-light.position.set(5, 3, -5); // Pas de positie van het licht aan
+light.position.set(5, 3, -5);
 scene.add(light);
 
 camera.position.z = 5;
