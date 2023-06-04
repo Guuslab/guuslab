@@ -1,10 +1,10 @@
-// import * as THREE from 'three';
+import * as THREE from 'three';
 
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
 
 const renderer = new THREE.WebGLRenderer();
-renderer.setSize(window.innerWidth, window.innerWidth);
+renderer.setSize(window.innerWidth, window.innerHeight);
 renderer.setClearColor(0xffffff);
 document.body.appendChild(renderer.domElement);
 
@@ -25,10 +25,18 @@ camera.position.z = 5;
 renderer.setPixelRatio(window.devicePixelRatio);
 renderer.setSize(window.innerWidth, window.innerHeight);
 
+let scrollY = 0; // Variable to store the scroll position
+
+function handleScroll() {
+    scrollY = window.scrollY; // Update the scroll position variable
+}
+
+window.addEventListener('scroll', handleScroll); // Listen for scroll events
+
 function animate() {
     requestAnimationFrame(animate);
 
-    cube.rotation.y += 0.01;
+    cube.rotation.y = scrollY * 0.01; // Update the rotation based on scroll position
 
     renderer.render(scene, camera);
 }
