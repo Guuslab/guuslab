@@ -28,7 +28,7 @@ renderer.setSize(window.innerWidth, window.innerHeight);
 let scrollY = 0; // Variable to store the scroll position
 
 function handleScroll() {
-    scrollY = window.scrollY; // Update the scroll position variable
+    scrollY = window.scrollY;
 }
 
 window.addEventListener('scroll', handleScroll); // Listen for scroll events
