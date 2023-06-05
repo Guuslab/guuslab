@@ -1,11 +1,10 @@
 :root {
-    --background: #ffffff;
-    --backgroundtr: #ffffffaf;
-    --30: #343434;
-    --30tr: #343434af;
-    /* --30: #588157; */
-    --10: #415942; 
-    --10tr: #415942af;
+    --background: #f5f5f5;
+    --backgroundtr: #f5f5f5af;
+    --div: #343434;
+    --divtr: #343434af;
+    --main: #ff7700; 
+    --maintr: #ff7700af;
     --text: #333;
 }
 
@@ -15,22 +14,21 @@ address, article, aside, div, footer, header, hgroup, main, nav, section {
 
 body {
     background-color: var(--background);
-    padding-top: 200px;
+    padding-top: 15vh;
     margin: 0px;
 }
 
+canvas {
+  border-radius: 30px;
+}
+
 .div {
-  background-color: var(--30);
+  background-color: var(--div);
   border-radius: 15px;
   margin: 100px;
   padding: 100px;
   position: relative;
   z-index: 1;
-}
-
-h1 {
-  font-family: arial;
-  margin-left: 30px;
 }
 
 .nav {
@@ -46,9 +44,8 @@ h1 {
     justify-content: flex-end;
     align-items: center;
     backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: saturate(1.8) blur(20px);
     z-index: 100;
-    
 }
 
 .logo {
@@ -65,7 +62,6 @@ h1 {
     font-family: arial;
     font-weight: bold;
     color: var(--text);
-    background-color: var(--backgroundtr);
     transition: all 0.5s ease-in-out;
     border-radius: 5px;
     padding: 10px;
@@ -92,7 +88,36 @@ h1 {
       color: var(--background);
     }
     to {
-      background-color: var(--backgroundtr);
+      background-color: transparent;
       color: var(--text);
     }
   }
+.maintext {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin-left: 30px;
+  color: var(--main);
+}
+
+/* -------------------------------------------------------- */
+/* mobile */
+
+@media (max-width: 1000px){
+.logo {
+  width: 100px;
+  height: 100px;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.nav-item a {
+  font-size: 40px;
+  border-radius: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.maintext {
+font-size: 50px;
+}
+}
