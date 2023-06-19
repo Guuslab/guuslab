@@ -42,9 +42,9 @@ loader.load(
   function (xhr) {
     const progress = xhr.loaded / xhr.total;
 
-    const percentage = Math.round(progress * 100);
+    const percentage = Math.min(Math.round(progress * 100), 100); // Begrens het percentage tot 100
     loadingProgress.style.width = `${percentage}%`;
-    loadingText.innerText = `${percentage}%`; // Voeg percentage toe aan tekst
+    loadingText.innerText = `${percentage}%`;
   },
   function (error) {
     console.error(error);
