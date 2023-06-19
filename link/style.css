@@ -142,9 +142,6 @@ a button:hover {
 /* mobile */
 
 @media (max-width: 1000px){
-  body {
-    padding-top: 25vh;
-}
 
   .logo {
   width: 100px;

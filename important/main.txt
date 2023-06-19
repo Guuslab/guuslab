@@ -31,7 +31,7 @@ css / backgroundblur
 -------------------------------------
 html / linking
 ==============
-css /
+ css /
  <link rel="stylesheet" href="css/main.css">
 
  javascript / 
