@@ -21,7 +21,7 @@ const loader = new GLTFLoader();
 let model;
 
 loader.load(
-  'public/3dmodel/hijskraan.glb',
+  '/3dmodel/hijskraan.glb',
   function (gltf) {
     model = gltf.scene;
     scene.add(model);

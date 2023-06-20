@@ -233,3 +233,12 @@ a button:hover {
 font-size: 50px;
 }
 }
+
+
+
+
+
+
+.beta {
+  background-color: #ff00009b;color: #ff0000;font-weight: bold;rotate: 315deg;z-index: 999;left: auto;right: auto;
+}
