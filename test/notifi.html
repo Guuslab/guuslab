@@ -31,23 +31,31 @@
         return;
       }
 
-      Notification.requestPermission().then(permission => {
-        if (permission === 'granted') {
-          setTimeout(() => {
-            const notificationOptions = {
-              body: 'Dit is meer tekst',
-              data: { hallo: 'wereld' },
-            };
+      if (Notification.permission === 'granted') {
+        showNotification();
+      } else if (Notification.permission !== 'denied') {
+        Notification.requestPermission().then(permission => {
+          if (permission === 'granted') {
+            showNotification();
+          }
+        });
+      }
+    }
 
-            if ('Notification' in window && 'ServiceWorkerRegistration' in window) {
-              notificationOptions.icon = 'logob.svg'; // Pad naar het .svg-bestand
-              notificationOptions.badge = 'favo.ico'; // Pad naar het .ico-bestand
-            }
+    function showNotification() {
+      setTimeout(() => {
+        const notificationOptions = {
+          body: 'Dit is meer tekst',
+          data: { hallo: 'wereld' },
+        };
 
-            const notification = new Notification('Test! Test! Test!', notificationOptions);
-          }, 10000); // Wacht 10 seconden voordat de melding wordt verzonden
+        if ('Notification' in window && 'ServiceWorkerRegistration' in window) {
+          notificationOptions.icon = 'logob.svg'; // Pad naar het .svg-bestand
+          notificationOptions.badge = 'favo.ico'; // Pad naar het .ico-bestand
         }
-      });
+
+        const notification = new Notification('Test! Test! Test!', notificationOptions);
+      }, 10000); // Wacht 10 seconden voordat de melding wordt verzonden
     }
 
     const myButton = document.querySelector('#myButton');
