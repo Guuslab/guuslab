@@ -2,17 +2,11 @@
 <html>
 <head>
   <title>Pushmeldingen</title>
-  <link rel="manifest" href="important/site.webmanifest">
-  <meta      
-      name="apple-mobile-web-app-status-bar-style"
-      content="black-translucent">
-  <meta name="viewport" content="viewport-fit=cover, user-scalable=no">
 </head>
 <body>
   <button id="myButton">Klik hier</button>
 
   <script>
-    // Registratie van de service worker
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('/service-worker.js')
         .then(registration => {
@@ -23,7 +17,6 @@
         });
     }
 
-    // Vraag toestemming voor pushmeldingen
     function askForNotificationPermission() {
       if (!('Notification' in window)) {
         console.error('De Notification API wordt niet ondersteund in deze browser');
@@ -49,7 +42,6 @@
       }, 10000); // Wacht 10 seconden voordat de melding wordt verzonden
     }
 
-    // Event listener voor het klikken op de knop om toestemming te vragen
     const myButton = document.querySelector('#myButton');
     myButton.addEventListener('click', askForNotificationPermission);
   </script>
