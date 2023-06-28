@@ -1,15 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    
+  <title>Pushmeldingen</title>
 </head>
 <body>
-    <button>Klik hier</button>
+  <button id="myButton">Klik hier</button>
 
-    <script> src="notifi.js"</script>
+  <script>
+    // Registratie van de service worker
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/service-worker.js')
+        .then(registration => {
+          console.log('Service Worker geregistreerd:', registration);
+        })
+        .catch(error => {
+          console.error('Fout bij het registreren van de Service Worker:', error);
+        });
+    }
+
+    // Vraag toestemming voor pushmeldingen
+    function askForNotificationPermission() {
+      if (!('Notification' in window)) {
+        console.error('De Notification API wordt niet ondersteund in deze browser');
+        return;
+      }
+
+      setTimeout(() => {
+        Notification.requestPermission().then(permission => {
+          if (permission === 'granted') {
+            const notificationOptions = {
+              body: 'Dit is meer tekst',
+              data: { hallo: 'wereld' },
+            };
+
+            if ('Notification' in window && 'ServiceWorkerRegistration' in window) {
+              notificationOptions.icon = 'logob.svg'; // Pad naar het .svg-bestand
+              notificationOptions.badge = 'favo.ico'; // Pad naar het .ico-bestand
+            }
+
+            const notification = new Notification('Test! Test! Test!', notificationOptions);
+          }
+        });
+      }, 10000); // Wacht 10 seconden voordat de melding wordt verzonden
+    }
+
+    // Event listener voor het klikken op de knop om toestemming te vragen
+    const myButton = document.querySelector('#myButton');
+    myButton.addEventListener('click', askForNotificationPermission);
+  </script>
 </body>
 </html>
