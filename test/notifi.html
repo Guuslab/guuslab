@@ -31,9 +31,9 @@
         return;
       }
 
-      setTimeout(() => {
-        Notification.requestPermission().then(permission => {
-          if (permission === 'granted') {
+      Notification.requestPermission().then(permission => {
+        if (permission === 'granted') {
+          setTimeout(() => {
             const notificationOptions = {
               body: 'Dit is meer tekst',
               data: { hallo: 'wereld' },
@@ -45,9 +45,9 @@
             }
 
             const notification = new Notification('Test! Test! Test!', notificationOptions);
-          }
-        });
-      }, 10000); // Wacht 10 seconden voordat de melding wordt verzonden
+          }, 10000); // Wacht 10 seconden voordat de melding wordt verzonden
+        }
+      });
     }
 
     const myButton = document.querySelector('#myButton');
