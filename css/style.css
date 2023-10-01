@@ -1,0 +1,33 @@
+:root {
+  --background:#ffffff;
+  --nav:#5845ff1c;
+  --primary:#5745FF;
+  --primarytr:#5745FF50;
+  --dark:#000000;
+  --darkrt:#00000050;
+  --text:#ffffff;
+  --font: timeline-210, sans-serif;
+}
+
+* {
+margin: 0;
+}
+
+body {
+  scroll-behavior: smooth;
+  background-color: var(--background);
+}
+
+.hero-div {
+  width: 100vw;
+  height: 100vh;
+}
+
+#canvas {
+  z-index: -1;
+}
+
+
+.txt-text {
+  color: black;
+}

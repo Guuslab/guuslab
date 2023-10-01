@@ -1,2 +1,0 @@
-svg editor
-https://boxy-svg.com/app werkt niet in safari

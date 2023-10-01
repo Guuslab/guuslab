@@ -2,11 +2,11 @@
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <title>Guuslab</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Experimenten</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/mob-nav.css">
+    <link rel="stylesheet" href="css/exp.css">
     <link rel="shortcut icon" href="img/logo/SVG/logo.svg" type="image/x-icon">
 </head>
 <body>
@@ -21,25 +21,26 @@
         <img class="logo" src="img/logo/SVG/logo-full.svg" alt="logo" oncontextmenu="return false;">
       </a>
      <ul class="menu-items">
-        <li class="item1-on"><a href="/">Home</a></li>
+        <li class="item1"><a href="/">Home</a></li>
         <li class="item2"><a href="/mij">Over Mij</a></li>
         <li class="item3"><a href="/pro">Projecten</a></li>
-        <li class="item4"><a href="/exp">Experimenten</a></li>
+        <li class="item4-on"><a href="/exp">Experimenten</a></li>
       </ul>
     </div>
   </header>
-  <div class="hero-div">
-    <canvas id="canvas"></canvas>
-  </div>
 
+  <div class="container">
+    <a href="https://flowfield.guuslab.com" class="item flowfieldtxt">
+      <h3 class="card-title">FlowField</h3>
+      <div class="bg flowfield" style="background-image: url('exp-img/flowfield.jpg');"></div>
+    </a>
+  </div>
 
 
 
 <script src="js/font.js"></script>
 <script src="js/mob.js"></script>
 <script src="js/nav.js"></script>
-<script src="js/perlin.js"></script>
-<script src="js/math.js"></script>
-<script src="js/dots.js"></script>
 </body>
 </html>
+

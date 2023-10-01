@@ -1,0 +1,59 @@
+.hero-exp {
+    font-family: var(--font);
+    margin-top: -90vh;
+  }
+  
+  .hero-main-exp {
+    text-align: center;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(180deg,var(--primary),var(--secondary));
+    will-change: transform;
+    overflow: hidden;
+    color: #00000000;
+    font-size: 50pt;
+  }
+  
+  .container {
+    padding-top: 15vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+    gap: 40px;
+    margin: 0 16px;
+  }
+  
+  .item {
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .card-title{
+    font-size: 20pt;
+    font-family: var(--font);
+    margin-bottom: 15px;
+    font-weight: 300;
+  }
+  
+  .bg {
+    width: 100%;
+    padding-top: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+    transition: transform 0.3s cubic-bezier(0.5, 0.01, 0.87, 0.25);
+  }
+
+  .bg:hover {
+    transform: scale(1.1); /* Vergroot de afbeelding met 10% op hover */
+  }
+
+  .glutxt {
+    color: #000000;
+  }
+
+  .glu {
+    border: 4px solid #000000;
+    box-shadow: 0px 0px 40px -6px #000000;
+
+  }
+  
