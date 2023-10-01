@@ -57,7 +57,7 @@ let colorConfig;
 let buffer32;
 
 function setup(callback) {
-  size = 2;
+  size = 4;
   noiseZ = 0;
   canvas = document.querySelector("#canvas");
   ctx = canvas.getContext("2d");
