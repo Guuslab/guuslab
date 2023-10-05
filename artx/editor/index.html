@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ARTX Editor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1 class="title">ARTX Editor</h1>
+
+    <div id="editorWrapper">
+      <pre id="lineNumbers">LOADING...</pre>
+      <textarea id="editor" spellcheck="false" placeholder="start with your dimensions of the file you want. more info on guuslab.com/artx"></textarea>
+    
+    <div class="buttons">
+    <button class="run" onclick="runCode()">Run Code</button>
+
+    <button class="color" onclick="extractColorsFromEditor()">Extract Colors</button>
+
+    <input type="file" id="fileInput" style="display:none;" accept=".artx">
+    <button class="import" onclick="document.getElementById('fileInput').click()">Import ARTX</button>
+    
+    <button class="export" onclick="exportGlab()">Export as ARTX</button>
+
+    <button class="exportPng" onclick="exportAsPNG()">Export as PNG</button>
+
+    <button class="exportSvg" onclick="exportAsSVG()">Export as SVG</button>
+    </div>
+   
+    <canvas id="canvas"></canvas> 
+
+    <div id="colorInputSection">
+      <input type="text" id="colorInput" placeholder="Enter HEX color code">
+      <button id="add" onclick="addColorFromInput()">Add Color</button>
+      <div id="colorStorage">
+      <!-- colors -->
+    </div>
+    </div>
+
+    <div id="customColorPicker">
+      <label for="hue"></label><input type="range" id="hue" min="0" max="360">
+      <label for="saturation"></label><input type="range" id="saturation" min="0" max="100">
+      <label for="lightness"></label><input type="range" id="lightness" min="0" max="100">
+      <div id="colorPreview"></div>
+      <button id="add" onclick="addSelectedColor()">Add Color</button>
+    </div>
+    
+     
+</div>
+<script src="script.js"></script>
+</body>
+</html>
