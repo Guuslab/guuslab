@@ -15,7 +15,7 @@ function runCode() {
   const [dimensions, ...colors] = code.split(',');
   const [width, height] = dimensions.split('x').map(Number);
 
-  const scale = 50;
+  const scale = 30;
   const canvas = document.getElementById('canvas');
   const ctx = canvas.getContext('2d');
 
