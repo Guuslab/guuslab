@@ -1,12 +1,12 @@
 :root {
-  --background:#ffffff;
-  --nav:#5845ff1c;
-  --primary:#5745FF;
-  --primarytr:#5745FF50;
+  --background:#ded7d1;
+  --nav:#f298401c;
+  --primary:#f29840;
+  --primarytr:#f2984050;
   --dark:#000000;
   --darkrt:#00000050;
   --text:#ffffff;
-  --font: timeline-210, sans-serif;
+  --font: "juicy-pro-standard", sans-serif;
 }
 
 * {
@@ -25,6 +25,7 @@ body {
 
 #canvas {
   z-index: -1;
+  background-color: var(--background);
 }
 
 

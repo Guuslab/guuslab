@@ -55,6 +55,7 @@ let particles;
 let config;
 let colorConfig;
 let buffer32;
+let forcesSetToZero = false;
 
 function setup(callback) {
   size = 4;
@@ -66,9 +67,16 @@ function setup(callback) {
     zoom: 100,
     noiseSpeed: 0.01,
     particleSpeed: 2,
-    fieldForce: 40,
+    fieldForce: 50,
     randomForce: 1 };
 
+    setTimeout(() => {
+      config.fieldForce = 0;
+      config.particleSpeed = 0;
+      config.randomForce = 0;
+      forcesSetToZero = true;
+    }, 40000);
+    
 
   colorConfig = {
     particleOpacity: 0.1 };
@@ -140,7 +148,7 @@ function calculateField() {
 }
 
 function drawBackground() {
-  ctx.fillStyle = "white";
+  ctx.fillStyle = "#ded7d1";
   ctx.fillRect(0, 0, w, h);
 }
 
@@ -159,7 +167,7 @@ function drawText(callback) {
 }
 
 function drawParticles() {
-  ctx.strokeStyle = `rgba(0, 0, 0, ${colorConfig.particleOpacity})`;
+  ctx.strokeStyle = `rgba(242, 152, 64, ${colorConfig.particleOpacity})`;
   let x;
   let y;
   particles.forEach(p => {
