@@ -8,6 +8,35 @@
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/mob-nav.css">
     <link rel="shortcut icon" href="https://guus.space/logo/lab/fav.svg" type="image/x-icon">
+    <style>
+                body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: sans-serif;
+            font-weight: 100;
+        }
+
+
+        .countdown-unit {
+            display: inline-block;
+            font-size: 10vw;
+            margin: 0 10px;
+            z-index: 999999999999999999;
+        }
+
+        .animate {
+            animation: pulse 1s;
+        }
+
+        @keyframes pulse {
+            0% { transform: rotate(0deg); }
+            50% { transform: rotate(30deg) scale(2); font-weight: 500; color: rgb(255, 0, 0); }
+            100% { transform: rotate(0deg); }
+        }
+    </style>
 </head>
 <body>
   <header>
@@ -28,6 +57,92 @@
       </ul>
     </div>
   </header>
+
+        <div id="days" class="countdown-unit"></div>
+    <div id="hours" class="countdown-unit"></div>
+    <div id="minutes" class="countdown-unit"></div>
+    <div id="seconds" class="countdown-unit"></div>
+
+    <script>
+        const daysElement = document.getElementById('days');
+        const hoursElement = document.getElementById('hours');
+        const minutesElement = document.getElementById('minutes');
+        const secondsElement = document.getElementById('seconds');
+
+        const endTime = new Date('2024-01-04T00:00:00Z').getTime(); // 1 Jan 2024
+
+        let lastDays, lastHours, lastMinutes, lastSeconds;
+        let firstUpdate = false;
+
+        if (minutes !== lastMinutes) {
+                minutesElement.innerText = minutes + 'm ';
+                if (!firstUpdate) {
+                    minutesElement.classList.add('animate');
+                    setTimeout(() => minutesElement.classList.remove('animate'), 900);
+                }
+                lastMinutes = minutes;
+            }
+
+            function updateCountdown() {
+                const now = new Date().getTime();
+                const distance = endTime - now;
+
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                if (days !== lastDays) {
+                    daysElement.innerText = days + 'd ';
+                    if (!firstUpdate) {
+                        daysElement.classList.add('animate');
+                        setTimeout(() => daysElement.classList.remove('animate'), 900);
+                    }
+                    lastDays = days;
+                }
+
+                if (hours !== lastHours) {
+                    hoursElement.innerText = hours + 'h ';
+                    if (!firstUpdate) {
+                        hoursElement.classList.add('animate');
+                        setTimeout(() => hoursElement.classList.remove('animate'), 900);
+                    }
+                    lastHours = hours;
+                }
+
+                if (minutes !== lastMinutes) {
+                    minutesElement.innerText = minutes + 'm ';
+                    if (!firstUpdate) {
+                        minutesElement.classList.add('animate');
+                        setTimeout(() => minutesElement.classList.remove('animate'), 900);
+                    }
+                    lastMinutes = minutes;
+                }
+
+                if (seconds !== lastSeconds) {
+                    secondsElement.innerText = seconds + 's ';
+                    if (!firstUpdate) {
+                        secondsElement.classList.add('animate');
+                        setTimeout(() => secondsElement.classList.remove('animate'), 900);
+                    }
+                    lastSeconds = seconds;
+                }
+
+                if (distance < 0) {
+                    clearInterval(interval);
+                    daysElement.innerText = '';
+                    hoursElement.innerText = '';
+                    minutesElement.innerText = '';
+                    secondsElement.innerText = 'UPDATE?????';
+                }
+
+                firstUpdate = false;
+            }
+
+        const interval = setInterval(updateCountdown, 1000);
+        updateCountdown(); // initial update
+    </script>
+    
   <div class="hero-div">
     <canvas id="canvas"></canvas>
   </div>
