@@ -1,15 +1,23 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-    <meta charset="UTF-8">
-    <title>Guuslab</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/mob-nav.css">
-    <link rel="shortcut icon" href="https://guus.space/logo/lab/fav.svg" type="image/x-icon">
+  <script type="module" src="https://guus.space/libraries/artx.js"></script>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/root.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/mob-nav.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="https://guus.space/logo/lab/stiker.png" type="image/x-icon">
+  <title>Guuslab</title>
+
+  <meta property="og:title" content="Guuslab"/>
+  <meta property="og:description" content="Guuslab is een webdesign bedrijf dat opgericht is door Guus Kaashoek een student op het GLU."/>
+  <meta property="og:image" content="https://guus.space/logo/lab/stiker.png"/>
+  <meta property="og:url" content="https://guuslab.com"/>
 </head>
 <body>
+  <!-- navigatie -->
   <header>
     <div class="hamburger-menu">
       <div class="hamburger-icon">
@@ -18,28 +26,106 @@
         <div class="bar"></div>
       </div>
       <a href="/">
-        <img class="logo" src="https://guus.space/logo/lab/logo.svg" alt="logo" oncontextmenu="return false;">
+        <img class="logo" src="https://guus.space/logo/lab/white-icon.svg" alt="logo" oncontextmenu="return false;">
       </a>
      <ul class="menu-items">
-        <li class="item1-on"><a href="/">Home</a></li>
-        <li class="item2"><a href="/mij">Over Mij</a></li>
-        <li class="item3"><a href="/pro">Projecten</a></li>
-        <li class="item4"><a href="/exp">Experimenten</a></li>
+        <li><a class="item1-on" href="/">Home</a></li>
+        <li><a class="item2" href="/about">About</a></li>
+        <li><a class="item3" href="/pro">Projecten</a></li>
+        <li><a class="item4" href="/lab">The Lab</a></li>
       </ul>
     </div>
   </header>
-  <div class="hero-div">
-    <canvas id="canvas"></canvas>
+  <!-- <div class="side-bar">
+    <div class="the-bar"></div>
+  </div> -->
+
+  <!-- hero -->
+  <div class="hero">
+  <h1 class="hero-text">guuslab</h1>
+  <h2 class="hero-q">Designing Tomorrow's Web Today</h2>
+  </div>
+
+  <!-- guussky -->
+  <div class="guus-sky">
+    <h2 class="sky-title">Guussky</h2>
+    <div class="sky-content">
+        <img class="sky-img" src="https://guus.space/assets/guuslab/guussky.jpg" alt="guussky-img" draggable="false">
+      <div class="sky-text">
+        <p class="sky-p">The revolutionary online weather app that brings you up-to-date weather forecasts without any hassle or account requirements. GuusSky is your go-to solution for accurate weather predictions, providing a glimpse into the atmospheric conditions up to 15 days into the future, all at your fingertips.</p>
+        <a class="sky-a" href="https://weer.guuslab.com">GuusSky</a>
+      </div>
+    </div>
   </div>
 
 
 
+    <!-- projecten -->
+    <div class="guus-sky">
+      <h2 class="artx-title">ARTX</h2>
+      <div class="artx-content">
+        <div class="home-pro-img">
+          <artx class="artx-img">
+          5x5,#2485c2,#000000,#2485c2,#000000,#2485c2,#000000,#2485c2,#2485c2,#2485c2,#000000,#000000,#2485c2,#000000,#2485c2,#000000,#000000,#2485c2,#2485c2,#2485c2,#000000,#2485c2,#000000,#2485c2,#000000,#2485c2
+        </artx>
+      </div>
+        <div class="sky-text">
+          <p class="sky-p">Introducing ArtX Editor, the ultimate pixel editor! Unlock the potential of your creativity with the slickest files imaginable. Export effortlessly to artx, png, and svg formats. all without the hassle of logging in. Your data stays securely stored on your device, giving you the freedom to create without boundaries!</p>
+          <a class="artx-a" href="https://artx.guuslab.com/">ARTX</a>
+        </div>
+      </div>
+    </div>
 
-<script src="js/font.js"></script>
-<script src="js/mob.js"></script>
-<script src="js/nav.js"></script>
-<script src="js/perlin.js"></script>
-<script src="js/math.js"></script>
-<script src="js/dots.js"></script>
+    <footer>
+      <div class="footer-content">
+        <div class="footer-logo">
+          <a href="/">
+            <img src="https://guus.space/logo/lab/white-full.svg" alt="logo">
+          </a>
+        </div>
+        <div class="footer-links">
+          <ul>
+            <h2>‎</h2>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/pro">Projecten</a></li>
+            <li><a href="/lab">The Lab</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <ul>
+            <h2>PROJECTEN</h2>
+            <li><a href="https://artx.guuslab.com/" target="_blank">ARTX</a></li>
+            <li><a href="https://weer.guuslab.com/" target="_blank">GuusSky</a></li>
+            <li><a href="https://guus.space/" target="_blank">GuusSpace</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <ul>
+            <h2>THE LAB</h2>
+            <li><a href="https://flowfield.guuslab.com/" target="_blank">Flowfield</a></li>
+            <li><a href="https://typetest.guuslab.com/" target="_blank">Typetest</a></li>
+            <li><a href="https://blob.guuslab.com/" target="_blank">Blob</a></li>
+            <li><a href="https://guuslab.com/wpm/" target="_blank">WPM</a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <a href="https://whatsapp.com/channel/0029Va9YDJE2phHTJpTV2f1B/" target="_blank"><img src="https://guus.space/icon/whatapp.svg" alt="Whatapp"></a>
+          <a href="https://www.instagram.com/guuslab/" target="_blank"><img src="https://guus.space/icon/insta.svg" alt="Insta"></a>
+          <a href="https://github.com/guuskaashoek/" target="_blank"><img src="https://guus.space/icon/github.svg" alt="Github"></a>
+          <a href="https://x.com/guuslab/" target="_blank"><img src="https://guus.space/icon/x.svg" alt="X"></a>
+        </div>
+      </div>
+    </footer>
+
+
+
+
+  <script src="js/mob.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/font.js"></script>
+  <script src="js/bar.js"></script>
 </body>
 </html>

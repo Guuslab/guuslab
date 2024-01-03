@@ -7,11 +7,6 @@ Disallow: /artx/*
 Disallow: /css/*
 Disallow: /js/*
 Disallow: /exp-img/*
-Disallow: /img/google/*
-Disallow: /img/logo/gif/*
-Disallow: /img/logo/png/*
-Disallow: /img/logo/RAW/*
-Disallow: /img/video/*
 Disallow: /pro-img/*
 Disallow: /wpm/*
 Allow: /logo/SVG* 	

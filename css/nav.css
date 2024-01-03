@@ -8,14 +8,13 @@
     align-items: center;
     padding: 10px;
     color: transparent;
-    background-color: #f5ebe07d;
+    background-color: var(--black-70);
     left: 0;
     right: 0;
     top: 0;
     z-index: 999;
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: saturate(1.8) blur(20px);
-    border-bottom: 1px solid var(--primary);
   }
   
   .menu-items {
@@ -39,36 +38,31 @@
   
   .menu-items a {
     text-decoration: none;
-    color: var(--primary);
+    color: var(--white-70);
     font-family: var(--font);
     font-size: 30pt;
     font-size: 100%;
     font-weight: 600;
-    transition: all ease-in-out 100ms;
   }
   
   .menu-items a:hover {
-    font-weight: bold;
+    color: #ffffff;
   }
   
   .item1-on {
-    background-color: var(--primarytr);
-    margin-right: 10px;
+    color: var(--white) !important;
   }
   
   .item2-on {
-    background-color: var(--primarytr);
-    margin-right: 10px;
+    color: var(--white) !important;
   }
   
   .item3-on {
-    background-color: var(--primarytr);
-    margin-right: 10px;
+    color: var(--white) !important;
   }
   
   .item4-on {
-    background-color: var(--primarytr);
-    margin-right: 10px;
+    color: var(--white) !important;
   }
   
   .hamburger-icon {
@@ -85,6 +79,7 @@
     position: relative;
     height: 40px;
     margin-bottom: -5px;
+    pointer-events: none;
   }
   
   .logo::before {

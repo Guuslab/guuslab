@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;300;400;700&display=swap');
+
+:root{
+    --none: #00000000;
+    --white: #ffffff;
+    --white-70: #ffffffba;
+    --white-50: #ffffff85;
+    --white-10: #ffffff30;
+    --black: #000000;
+    --black-70: #000000ba;
+    --black-50: #00000085;
+    --black-10: #00000030;
+    --gray: #4f4f4f;
+    --gray-70: #4f4f4fba;
+    --gray-50: #4f4f4f85;
+    --gray-10: #4f4f4f30;
+    --rood: #EF5343;
+    --rood-50: #ef534385;
+    --orange: #F29841;
+    --orange-50: #F2984185;
+    --geel: #EDD045;
+    --geel-50: #EDD04585;
+    --groen: #BBE555;
+    --groen-50: #BBE55585;
+    --licht-blouw: #A6D9D8;
+    --licht-blouw-50: #A6D9D885;
+    --donker-blouw: #4374EF;
+    --donker-blouw-50: #4374EF85;
+    --paars: #BA47EA;
+    --paars-50: #BA47EA85;
+
+    --font-line: 'juicy-simple-inline';
+    --font-normal: 'juicy-simple-standard';
+    --font-simple: "juicy-simple-fill";
+    --font: "Kanit";
+}
