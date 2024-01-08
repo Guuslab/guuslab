@@ -431,7 +431,7 @@ footer {
 
 .projecten {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    /* grid-template-columns: repeat(auto-fill, minmax(500px, 1fr)); */
     grid-auto-rows: auto;
     gap: 20px;
     margin-top: 90px;
@@ -481,8 +481,10 @@ footer {
     font-family: var(--font);
 }
 
-
 @media (min-width: 1000px) {
+    .projecten {
+        grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    }
     .card  {
         width: 400px;
     }
