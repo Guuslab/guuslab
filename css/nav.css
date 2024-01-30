@@ -1,20 +1,38 @@
+:root {
+  /* --font: 'Noto Sans', ui-sans-serif; */
+  --p: 1rem;
+  --h: 1.2rem;
+  --white: #fff;
+  --black: #000;
+}
+  
   label {
     font-size: 100000000px;
   }
   
   .hamburger-menu {
-    position: fixed;
+    /* position: fixed;
     display: flex;
-    align-items: center;
+    align-items: center; */
     padding: 10px;
-    color: transparent;
-    background-color: var(--black-70);
+    /* color: transparent; */
+    /* background-color: var(--black-70); */
     left: 0;
     right: 0;
     top: 0;
     z-index: 999;
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: saturate(1.8) blur(20px);
+    /* backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: saturate(1.8) blur(20px); */
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 2rem;
+    /* z-index: 5; */
+    /* font-size: var(--h); */
+    font-family: var(--font);
   }
   
   .menu-items {
@@ -89,10 +107,49 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(0, 0, 0, 0);
     pointer-events: none;
   }
 
   #guuslab-logo {
     fill: var(--white);
   }
+
+
+
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 6rem;
+  display: flex;
+  padding: 0 2rem;
+  box-sizing: border-box;
+  z-index: 999;
+}
+
+.menu {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 2rem;
+  z-index: 5;
+}
+
+.backdrop {
+  width: 100vw;
+  height: 100%;
+  position: absolute;
+  z-index: 990;
+  top: 0;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  background: rgba(0, 0, 0, 0.1);
+  mask-image: linear-gradient(rgba(0, 0, 0) 30%, rgb(0, 0, 0,5) 50%, rgba(0, 0, 0, 0.7) 70%, rgba(0, 0, 0, 0) 100%);
+  -webkit-mask-image: linear-gradient(rgba(0, 0, 0) 30%, rgb(0, 0, 0,5) 50%, rgba(0, 0, 0, 0.7) 70%, rgba(0, 0, 0, 0) 100%);
+  inset: -1rem 0;
+}

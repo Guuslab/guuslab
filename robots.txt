@@ -9,4 +9,3 @@ Disallow: /js/*
 Disallow: /exp-img/*
 Disallow: /pro-img/*
 Disallow: /wpm/*
-Allow: /logo/SVG* 	
