@@ -115,6 +115,10 @@
     fill: var(--white);
   }
 
+  #guuslab-logo:hover {
+    fill: var(--white-50);
+  }
+
 
 
 
