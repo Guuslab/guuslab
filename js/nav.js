@@ -5,3 +5,4 @@ hamburgerIcon.addEventListener('click', () => {
   hamburgerIcon.classList.toggle('active');
   menuItems.classList.toggle('active');
 });
+
