@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <script type="module" src="https://guus.space/libraries/artx.js"></script>
+
+  <script type="module" src="../js/header.js"></script>
+  <script type="module" src="../js/footer.js"></script>
+
+  <script type="module" src="../js/copy.js"></script>
+  <script type="module" src="../js/mob.js?v=1.1"></script>
+  <script type="module" src="../js/nav.js?v=1.1"></script>
+  <script type="module" src="../js/font.js?v=1.1"></script>
+  <script type="module" src="../js/bar.js?v=1.1"></script>
+  
+  <script type="module" src="../js/code.js"></script>
+  <script type="module" src="../js/py.js"></script>
+
+
+  <link rel="stylesheet" href="../css/root.css?v=1.1">
+  <link rel="stylesheet" href="../css/style.css?v=1.2.1">
+  <link rel="stylesheet" href="../css/nav.css?v=1.1.1">
+  <link rel="stylesheet" href="../css/mob-nav.css?v=1.1">
+  <link rel="stylesheet" href="css/lab.css">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="shortcut icon" href="https://guus.space/logo/lab/stiker.png?v=1.1" type="image/x-icon">
+
+  <title>Guuslab - The Lab</title>
+</head>
+<body>
+
+    <lab-header page="4"></lab-header>
+
+
+    <article>
+        <h1>Onderzoek naar de effectiviteit</h1>
+
+        <div class="image-container">
+            <img class="front-image" src="https://guus.space/guuslab/guus-chat.jpg" alt="guus-chat">
+            <img class="back-image" src="https://guus.space/guuslab/guus-chat.jpg" alt="guus-chat">
+        </div>
+
+        <p>
+            In dit blogartikel bespreken we een onderzoek naar de effectiviteit van verschillende leermethoden. We hebben drie verschillende methoden vergeleken:
+
+            Traditionele methode: Leerlingen krijgen les in een klaslokaal met een docent.
+            Online methode: Leerlingen volgen online lessen via een computer of tablet.
+            Blended learning: Leerlingen combineren klassieke lessen met online lessen.
+            We hebben de effectiviteit van de verschillende methoden gemeten door de prestaties van de leerlingen te toetsen. We hebben ook gekeken naar de tevredenheid van de leerlingen met de verschillende methoden.
+            
+            Resultaten
+            
+            De resultaten van ons onderzoek laten zien dat de blended learning-methode de meest effectieve methode is. Leerlingen die blended learning volgden, behaalden de beste resultaten op de toetsen. Ze waren ook het meest tevreden met de methode.
+            
+            De traditionele methode was de minst effectieve methode. Leerlingen die de traditionele methode volgden, behaalden de laagste resultaten op de toetsen. Ze waren ook het minst tevreden met de methode.
+            
+            De online methode was iets effectiever dan de traditionele methode. Leerlingen die de online methode volgden, behaalden betere resultaten op de toetsen dan leerlingen die de traditionele methode volgden. Ze waren ook iets meer tevreden met de methode.
+        </p>
+
+        <div class="copyContainer">
+            <div class="options">
+                <button class="copyButton">Copy</button>
+                <div class="language"><h3>Python</h3></div>
+            </div>
+            <pre>
+                <code id="code" class="language-python code">
+import pandas as pd
+import numpy as np
+
+# Lees de data in
+data = pd.read_csv("data.csv")
+
+# Bereken de gemiddelde score voor elke methode
+traditional_mean = np.mean(data[data["method"] == "traditional"])
+online_mean = np.mean(data[data["method"] == "online"])
+blended_mean = np.mean(data[data["method"] == "blended"])
+
+# Vergelijk de gemiddelde scores
+print("Traditioneel:", traditional_mean)
+print("Online:", online_mean)
+print("Blended:", blended_mean)
+
+# T-test
+t_test = scipy.stats.ttest_ind(data[data["method"] == "traditional"], data[data["method"] == "blended"])
+print("T-test:", t_test.pvalue)
+                </code>
+            </pre>
+        </div>
+        
+        <p>
+            Ons onderzoek concludeert dat blended learning de meest effectieve methode is om te leren. Leerlingen die blended learning volgen, behalen betere resultaten en zijn meer tevreden met de methode.
+
+            Dit is slechts een kort voorbeeld van een blogartikel over onderzoek. Je kunt het artikel aanpassen en aanvullen met je eigen informatie.
+        </p>
+
+        <div class="copyContainer">
+            <div class="options">
+                <button class="copyButton">Copy</button>
+                <div class="language"><h3>CSS</h3></div>
+            </div>
+            <pre>
+                <code id="code" class="language-css code">
+button {
+    display: block;
+    background-color: var(--groen);
+    color: var(--black);
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: -80px;
+    margin-left: 35px;
+    margin-top: 50px;
+}
+                </code>
+            </pre>
+        </div>
+        
+    </article>
+
+
+
+    <lab-footer></lab-footer>
+
+</body>
+</html>

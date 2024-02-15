@@ -2,6 +2,8 @@
 <html lang="nl">
 <head>
   <script type="module" src="https://guus.space/libraries/artx.js"></script>
+  <script type="module" src="../js/header.js"></script>
+  <script type="module" src="../js/footer.js"></script>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="css/root.css?v=1.1">
   <link rel="stylesheet" href="css/style.css?v=1.2.1">
@@ -13,35 +15,10 @@
 </head>
 <body>
   <!-- navigatie -->
-  <header>
-    <nav>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon">
-          <div class="bar"></div>
-          <div class="bar"></div>
-          <div class="bar"></div>
-        </div>
-        <div class="logo-div">
-          <a href="/">
-            <svg fill="none" class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256.8 131.3" oncontextmenu="return false;">
-              <g>
-                <path
-                id="guuslab-logo"
-                  d="M168,65.7c.2-25.4,36.7-37,54.9-48.4-47.6,24.6-125.1,48.4-189,48.4,63.8,0,141.3,23.7,188.9,48.3-18.2-11.3-54.5-22.9-54.8-48.3Z"/>
-                </g>
-              </svg>
-          </a>
-        </div>
-      <ul class="menu-items">
-          <li><a class="item1" href="/">Home</a></li>
-          <li><a class="item2" href="/about">About</a></li>
-          <li><a class="item3" href="/pro">Projecten</a></li>
-          <li><a class="item4" href="/lab">The Lab</a></li>
-        </ul>
-      </div>
-      <div class="backdrop"></div>
-    </nav>
-  </header>
+  <lab-header page="0"></lab-header>
+
+
+
   <!-- <div class="side-bar">
     <div class="the-bar"></div>
   </div> -->
@@ -53,49 +30,7 @@
   </div>
 
 
-  <footer>
-    <div class="footer-content">
-      <div class="footer-logo">
-        <a href="/">
-          <img src="https://guus.space/logo/lab/white-full.svg" alt="logo">
-        </a>
-      </div>
-      <div class="footer-links">
-        <ul>
-          <h2>Guuslab</h2>
-          <li><a href="/">Home</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/pro">Projecten</a></li>
-          <li><a href="/lab">The Lab</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-links">
-        <ul>
-          <h2>PROJECTEN</h2>
-          <li><a href="https://artx.guuslab.com/" target="_blank">ARTX</a></li>
-          <li><a href="https://weer.guuslab.com/" target="_blank">GuusSky</a></li>
-          <li><a href="https://guus.space/" target="_blank">GuusSpace</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-links">
-        <ul>
-          <h2>THE LAB</h2>
-          <li><a href="https://flowfield.guuslab.com/" target="_blank">Flowfield</a></li>
-          <li><a href="https://typetest.guuslab.com/" target="_blank">Typetest</a></li>
-          <li><a href="https://blob.guuslab.com/" target="_blank">Blob</a></li>
-          <li><a href="https://guuslab.com/wpm/" target="_blank">WPM</a></li>
-        </ul>
-      </div>
-      <div class="footer-social">
-        <a href="https://whatsapp.com/channel/0029Va9YDJE2phHTJpTV2f1B/" target="_blank"><img src="https://guus.space/icon/whatapp.svg" alt="Whatapp"></a>
-        <a href="https://www.instagram.com/guuslab/" target="_blank"><img src="https://guus.space/icon/insta.svg" alt="Insta"></a>
-        <a href="https://github.com/guuskaashoek/" target="_blank"><img src="https://guus.space/icon/github.svg" alt="Github"></a>
-        <a href="https://x.com/guuslab/" target="_blank"><img src="https://guus.space/icon/x.svg" alt="X"></a>
-      </div>
-    </div>
-  </footer>
+  <lab-footer></lab-footer>
 
 
 
