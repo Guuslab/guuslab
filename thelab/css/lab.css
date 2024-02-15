@@ -276,10 +276,11 @@ button {
 	width: 100%;
 }
 
-.front-image {
+.front-image, img {
 	position: relative;
 	z-index: 2;
 	width: 50%;
+	border-radius: 5px;
 }
 
 .back-image {
