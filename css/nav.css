@@ -121,19 +121,15 @@
 
 
 
+/* ---------------------- nav ---------------------- */
 
-nav {
-  position: fixed;
+
+.hamburger-menu {
+  padding: 10px;
+  left: 0;
+  right: 0;
   top: 0;
-  width: 100%;
-  height: 6rem;
-  display: flex;
-  padding: 0 2rem;
-  box-sizing: border-box;
   z-index: 999;
-}
-
-.menu {
   position: relative;
   display: flex;
   flex-direction: row;
@@ -141,19 +137,56 @@ nav {
   align-items: center;
   width: 100%;
   gap: 2rem;
-  z-index: 5;
+  font-family: var(--font);
+}
+
+.menu-items-contaner {
+  list-style: none;
+  width: 240px;
+  max-width: 240px;
+  margin: 0;
+  top: 0;
+  width: auto;
+  display: flex;
+  z-index: 1;
+  transition: left 0.5s ease-in-out;
+  flex-direction: row;
+  height: auto;
+  overflow-y: scroll;
+}
+
+
+.hamburger-menu h2 {
+  color: var(--primary);
+  font-size: 7vw;
+  margin-top: -15px;
+  margin-left: -20px;
+  cursor: pointer;
+}
+
+
+
+nav {
+position: fixed;
+top: 0;
+width: 100vw;
+height: 6rem;
+display: flex;
+padding: 0 2rem;
+box-sizing: border-box;
+z-index: 9998;
 }
 
 .backdrop {
-  width: 100vw;
-  height: 100%;
-  position: absolute;
-  z-index: 990;
-  top: 0;
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  background: rgba(0, 0, 0, 0.1);
-  mask-image: linear-gradient(rgba(0, 0, 0) 30%, rgb(0, 0, 0,5) 50%, rgba(0, 0, 0, 0.7) 70%, rgba(0, 0, 0, 0) 100%);
-  -webkit-mask-image: linear-gradient(rgba(0, 0, 0) 30%, rgb(0, 0, 0,5) 50%, rgba(0, 0, 0, 0.7) 70%, rgba(0, 0, 0, 0) 100%);
-  inset: -1rem 0;
+width: 100vw;
+height: 100%;
+position: absolute;
+z-index: 990;
+top: 0;
+backdrop-filter: blur(20px);
+-webkit-backdrop-filter: blur(20px);
+background: rgba(0, 0, 0, 0.1);
+mask-image: linear-gradient(rgba(0, 0, 0) 30%, rgb(0, 0, 0,5) 50%, rgba(0, 0, 0, 0.7) 70%, rgba(0, 0, 0, 0) 100%);
+-webkit-mask-image: linear-gradient(rgba(0, 0, 0) 30%, rgb(0, 0, 0,5) 50%, rgba(0, 0, 0, 0.7) 70%, rgba(0, 0, 0, 0) 100%);
+inset: -1rem 0;
 }

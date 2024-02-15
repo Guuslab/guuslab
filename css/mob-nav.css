@@ -8,27 +8,34 @@
   z-index: 1000;
 }
 
-  .bar {
-    width: 40px;
-    height: 5px;
-    background-color: var(--white);
-    margin: 5px;
-    transition: transform 0.3s ease-in-out;
-    border-radius: 10px;
-  }
 
-  .hamburger-icon-mob.active .bar:nth-child(1) {
-    transform: rotate(45deg) translate(10px, 11px);
-  }
-  
-  .hamburger-icon-mob.active .bar:nth-child(2) {
-    transform: scaleX(0);
-  }
-  
-  .hamburger-icon-mob.active .bar:nth-child(3) {
-    transform: rotate(-45deg) translate(10px, -11px);
-  }
-  
+.bar {
+  width: 30px;
+  height: 5px;
+  background-color: var(--white);
+  margin: 5px;
+  transition: transform .5s ease-in-out;
+  border-radius: 10px;
+}
+
+.bar:nth-child(1) {
+  transform: rotate(0deg) translate(0px, 15px);
+}
+
+.bar:nth-child(2) {
+  transform: rotate(-0deg) translate(0px, -15px);
+}
+
+
+.active .bar:nth-child(1) {
+  transform: rotate(-405deg) translate(-3px, 7px);
+}
+
+.active .bar:nth-child(2) {
+  transform: rotate(405deg) translate(-3px, -7px);
+}
+
+
   .menu-items-mob {
     list-style: none;
     padding-right: 1vw;
@@ -90,3 +97,14 @@
     pointer-events: none;
   }
   
+
+  .menu-off {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    margin-left: 100vw;
+  }
+
+  .menu-off.active {
+    margin-left: 0;
+  }

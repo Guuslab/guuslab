@@ -12,7 +12,6 @@ class CustomHeader extends HTMLElement {
             <div class="hamburger-icon">
               <div class="bar"></div>
               <div class="bar"></div>
-              <div class="bar"></div>
             </div>
             <div class="logo-div">
               <a href="/">
@@ -34,6 +33,7 @@ class CustomHeader extends HTMLElement {
           </div>
           <div class="backdrop"></div>
         </nav>
+        <div class="menu-off"></div>
       </header>
     `;
   }
