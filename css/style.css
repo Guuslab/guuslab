@@ -450,6 +450,7 @@ footer {
     width: 40px;
     height: 40px;
     transition: all 0.5s cubic-bezier(0.10, 0.90, 0.10, 0.90);
+    border-radius: 99999999px;
 }
 
 .grid-item [alt=""]:hover {

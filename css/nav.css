@@ -120,7 +120,8 @@
   }
 
   .logo-div {
-    margin-left: -50px;
+    transform: translateX(-60px);
+    margin-left: 2.5vw;
   }
 
 
