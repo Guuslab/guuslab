@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script type="module" src="https://guus.space/libraries/artx.js"></script>
+
+  <script type="module" src="../js/header.js"></script>
+  <script type="module" src="../js/footer.js"></script>
+
+  <script type="module" src="../js/copy.js"></script>
+  <script type="module" src="../js/mob.js?v=1.1"></script>
+  <script type="module" src="../js/nav.js?v=1.1"></script>
+  <script type="module" src="../js/font.js?v=1.1"></script>
+  <script type="module" src="../js/bar.js?v=1.1"></script>
+  
+  <script type="module" src="../js/code.js"></script>
+  <script type="module" src="../js/py.js"></script>
+
+
+  <link rel="stylesheet" href="../css/root.css?v=1.1">
+  <link rel="stylesheet" href="../css/style.css?v=1.2.1">
+  <link rel="stylesheet" href="../css/nav.css?v=1.1.1">
+  <link rel="stylesheet" href="../css/mob-nav.css?v=1.1">
+  <link rel="stylesheet" href="css/lab.css">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="shortcut icon" href="https://guus.space/logo/lab/stiker.png?v=1.1" type="image/x-icon">
+
+  <title>The Lab -- video cutter</title>
+</head>
+<body>
+    <lab-header page="4"></lab-header>
+
+    <article>
+        <h1>video cutter</h1>
+
+        <div class="image-container">
+            <img class="front-image" src="https://guus.space/thelab/video-cutter.jpg" alt="video-cutter" oncontextmenu="return false;">
+            <img class="back-image" src="https://guus.space/thelab/video-cutter.jpg" alt="video-cutter" oncontextmenu="return false;">
+        </div>
+        
+        
+<p>
+    Video cutter is er om video's in stukken te knippen.
+</p>
+<p>
+    Download het zip bestand.
+</p>
+<a href="https://guus.space/thelab/video-cutter.zip" download="video-cutter.zip">Download video-cutter.zip</a>
+                    
+<p>
+    Zet het uitgepakte mapje in VS Code en plaats dan de video die je in stukken wilt snijden in het mapje.
+</p>
+<p>
+    Voer deze code in de terminal van VS Code uit om het bestand te laten werken. Verander de bestandsnaam als het nodig is naar degene die je wilt gebruiken: MP4 of MOV.
+</p>      
+    <div class="copyContainer">
+        <div class="options">
+            <button class="copyButton">Copy</button>
+            <div class="language"><h3>bash</h3></div>
+        </div>
+        <pre>
+            <code id="code" class="language-bash code">
+                chmod +x mp4.sh
+            </code>
+        </pre>
+    </div>
+<p>
+    Dan hebben we de precieze duur van de video nodig, dus voer dan dit commando uit in dezelfde terminal.
+</p>      
+    <div class="copyContainer">
+        <div class="options">
+            <button class="copyButton">Copy</button>
+            <div class="language"><h3>bash</h3></div>
+        </div>
+        <pre>
+            <code id="code" class="language-bash code">
+                ffmpeg -i video.mp4 2>&1 | grep "Duration"
+            </code>
+        </pre>
+    </div>
+<p>
+    Dan moet je dit doen en verander de '00:00:09.210' in deze code naar jouw Duration, en dan zet je er nog een 0 achter. De 18 is de hoeveelheid stukken waarin je de video wilt delen.
+</p>      
+    <div class="copyContainer">
+        <div class="options">
+            <button class="copyButton">Copy</button>
+            <div class="language"><h3>bash</h3></div>
+        </div>
+        <pre>
+            <code id="code" class="language-bash code">
+                ./mov.sh video.mp4 00:00:00.00 00:00:09.210 18
+            </code>
+        </pre>
+    </div>
+<p>
+    Nu krijg je een zip-mapje met alle clips van de video erin.
+</p>
+<p>
+    Als er een error is opgetreden, is het waarschijnlijk omdat je FFmpeg niet hebt geïnstalleerd. Installeer allereerst Homebrew en dan kun je via dat FFmpeg installeren.
+</p>
+<p>
+    Als er nog vragen zijn, stuur ze naar me op guus@guuslab.com.
+</p>
+    </article>
+
+    <lab-footer></lab-footer>
+</body>
+</html>
