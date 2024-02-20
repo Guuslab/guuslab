@@ -193,6 +193,7 @@ pre[class*=language-] {
 	animation: flyIn 2s forwards;
 	-webkit-backdrop-filter: blur(20px);
 	backdrop-filter: blur(20px);
+	z-index: 990;
 }
 
 .message.active {
