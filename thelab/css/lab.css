@@ -202,6 +202,8 @@ pre[class*=language-] {
 
 
 article {
+	display: flex;
+	flex-direction: column;
 	margin-top: 150px;
 	margin-bottom: 150px;
 	padding-left: 20vw;
@@ -214,15 +216,15 @@ h1 {
 	letter-spacing: 0.07em;
 }
 
-p {
+article p {
 	margin-bottom: 20px;
-	color: var(--white-10);
+	color: var(--white-50);
 	line-height: 1.6;
 }
 
 pre {
 	border-left: 5px solid var(--groen);
-	padding: 10px;
+	padding: 10px 0px;
 	line-height: 1.6;
 	margin-bottom: 20px;
 	border-radius: 5px;
@@ -281,6 +283,7 @@ button {
 	z-index: 2;
 	width: 50%;
 	border-radius: 5px;
+	padding: 10px 0px;
 }
 
 .back-image {
@@ -290,4 +293,9 @@ button {
 	z-index: 1;
 	filter: blur(20px);
 	width: 50%;
+}
+
+article a {
+	color: var(--groen);
+	padding: 10px 0px;
 }
