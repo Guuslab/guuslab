@@ -389,12 +389,31 @@ footer {
 
 /* the lab --------------------------- */
 
+#search {
+    box-sizing: border-box;
+    width: calc(100% - 50px);
+    margin: 0px 25px;
+    margin-top: 125px;
+    padding: 10px;
+    border: 1px solid var(--white-50);
+    border-radius: 999px;
+    font-size: 16px;
+    background-color: var(--black);
+    transition: all 0.4s ease-in-out;
+    color: var(--white);
+}
+
+#search:focus {
+    background-color: var(--white-10);
+    outline: none;
+    padding: 10px;
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     padding: 10px;
     gap: 10px;
-    margin-top: 90px;
 }
 
 .grid-item {
