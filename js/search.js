@@ -26,6 +26,11 @@ function executeSearch(searchValue) {
         var idElement = gridItem.querySelector('.id');
         var id = idElement ? idElement.textContent.toLowerCase().replace('#', '') : '';
 
+        // Check if searchValue is null and set it to an empty string if it is
+        if (searchValue === null) {
+            searchValue = '';
+        }
+
         // Replace dashes and underscores with spaces in the searchValue
         var modifiedSearchValue = searchValue.replace(/[-_]/g, ' ');
 
