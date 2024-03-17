@@ -277,14 +277,14 @@ button {
 	display: flex;
 	position: relative;
 	width: 100%;
+	margin-bottom: 25px;
 }
 
 .front-image, img {
 	position: relative;
 	z-index: 2;
-	width: 50%;
-	border-radius: 5px;
-	padding: 10px 0px;
+	width: 30vw;
+	border-radius: 20px;
 }
 
 .back-image {
@@ -293,7 +293,8 @@ button {
 	left: 0;
 	z-index: 1;
 	filter: blur(20px);
-	width: 50%;
+	width: 30vw;
+	border-radius: 20px;
 }
 
 article a {
