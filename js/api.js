@@ -3,7 +3,9 @@ window.onload = function() {
         .then(response => response.json())
         .then(data => {
             var heroElement = document.querySelector('.hero-q');
-            heroElement.textContent = data.word;
+            if (data.words && data.words.length > 0) {
+                heroElement.textContent = data.words[0];
+            }
         })
         .catch(error => console.error('Error:', error));
 };
