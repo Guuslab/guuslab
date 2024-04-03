@@ -1,5 +1,5 @@
 window.onload = function() {
-    fetch('https://api.guuslab.com/api/word?lan=nl&e=lab')
+    fetch('https://api.guuslab.com/api/word?lan=nl')
         .then(response => response.json())
         .then(data => {
             var heroElement = document.querySelector('.hero-q');
