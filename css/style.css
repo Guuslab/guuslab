@@ -551,3 +551,47 @@ footer {
         font-size: 30px;
     }
 }
+
+
+
+
+
+.number-container {
+    display: inline-block;
+    position: relative;
+    height: 2em; /* Aanpassen op basis van de grootte van de cijfers */
+    width: 1.5em; /* Aangepast voor meer ruimte */
+    font-size: 2em; /* Grotere cijfers voor betere leesbaarheid */
+    margin: 0 0.1em; /* Voeg ruimte toe tussen de cijfers */
+    font: var(--font-line);
+}
+.number {
+    position: absolute;
+    width: 100%;
+    text-align: center; /* Zorg ervoor dat de cijfers gecentreerd zijn */
+}
+.number.new {
+    top: 100%;
+    animation: slideUp 0.8s ease-in-out forwards;
+}
+.number.old {
+    animation: slideOut 0.8s ease-in-out forwards;
+}
+@keyframes slideUp {
+    from { 
+        top: 100%;
+        filter: blur(40px) opacity(0);
+     }
+    to { 
+        top: 0;
+        filter: blur(0) opacity(1);
+     }
+}
+@keyframes slideOut {
+    from { top: 0;
+        filter: blur(0) opacity(1);
+     }
+    to { top: -100%;
+        filter: blur(40px) opacity(0);
+     }
+}
