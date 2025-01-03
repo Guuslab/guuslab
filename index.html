@@ -131,7 +131,7 @@
                 <script type="module" src="https://guus.space/libraries/artx.js"></script>
 
                 <script>
-                    const endDate = new Date('January 4, 2025 00:00:00').getTime();
+                    const endDate = new Date(Date.UTC(2025, 0, 4, 11, 0, 0)).getTime(); // January 4, 2025, 12:00 PM Netherlands time is 11:00 AM UTC
             
                     function updateCountdown() {
                         const now = new Date().getTime();
